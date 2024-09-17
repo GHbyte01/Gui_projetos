@@ -1,11 +1,11 @@
 IMPPORTANTE ! estou usando pontilhado "..........." para separar os projetos.
 
-# ex3 
-print("olá mundo")
+# ex1 (Um pequeno exemplo do meu primeiro contato com programação) 
+print("hello world")
 
 ..............................................................................................................................................
 
-# ex2 (um exemplo de como somar 2 numeros usando comando def)
+# ex2 (Um pequeno exemplo de como somar 2 numeros usando comando def)
 def soma (a,b) :
     resultado = a + b
     return resultado
@@ -15,3 +15,196 @@ resultado_soma = soma(5,3)
 print(resultado_soma)
 
 ................................................................................................................................................
+
+# ex3 (Um pequeno exemplo de escolha entre um numero par ou impar)
+numero = int(input("Digite um numero: "))
+
+while numero != 0:
+    if numero % 2 == 0 :
+        print("O numero é par")
+    else :
+        print("O numero é impar")
+    numero = int(input("Digite outro numero: "))
+
+................................................................................................................................................
+
+# ex 4 (Um exemplo de escolha entre um numero par ou impar com adição de for in range)
+numero = int(input("Digite um numero: "))
+
+while numero != 0:
+    if numero % 2 == 0 :
+        print("O numero é par")
+    else :
+        print("O numero é impar")
+    numero = int(input("Digite outro numero: "))
+
+    for num in range(numero) :
+        print(num)
+
+................................................................................................................................................
+
+# ex5 (Um pequeno exemplo usando for in range)
+for numero in range (1, 11):
+    if numero % 2 == 0 :
+        print(numero)
+        break
+
+................................................................................................................................................
+
+# ex6 (Um pequeno exemplo usando contnue)
+for numero in range (1,11):
+    if numero == 5:
+        continue
+    print(numero)
+
+................................................................................................................................................
+
+# ex7 (Um pequeno exemplo usando continue e break no mesmo ex)
+for num in range(50,70):
+    if num == 50:
+        continue
+    print(num)
+    break
+
+................................................................................................................................................
+
+# ex 8 (Um pequeno exemplo usando type)
+x = 10
+nome = 'aluno'
+nota = 8.75
+fez_inscricao = True
+
+print(type(x))
+print(type(nome))
+print(type(nota))
+print(type(fez_inscricao))
+
+................................................................................................................................................
+
+# ex9 (Um pequeno exemplo de aprovação de acordo com a nota)
+nota=float(input("digite sua nota:"))
+
+if nota<6:
+  situacao=("recuperação")
+
+else:
+   situacao = ("aprovado")
+
+print(f"nota: {nota}")
+print(f"situacao: {situacao}")
+
+................................................................................................................................................
+
+# ex10 (Um exemplo de consultor de idade de acordo com a idade média nacional de 4 categorias : criança, adolecente , adulto e idoso)
+print("Seja bem vindo ao consultor de idade")
+nome = input("Qual seu nome?: ")
+print(f"seja bem vindo(a) {nome}")
+idade = int(input("Digite sua idade para consulta: "))
+
+if idade <14 :
+    print(f"analizando sua idade de {idade} vc ainda é criança(a) {nome} ")
+elif 14 <= idade <16 :
+    print(f"analizando sua idade de {idade} vc ainda é adolecente(a) {nome} ")
+elif 16<= idade <17 :
+    print(f"analizando sua idade de {idade} vc é pré adulto(a) {nome} ")
+elif 18<= idade <45 :
+    print(f"analizando sua idade de {idade} vc é adulto(a) {nome} ")
+elif 45<= idade <50 :
+    print(f"analizando sua idade de {idade} vc é pré idoso(a) {nome} ")
+else :
+    print(f"analizando sua idade de {idade} vc é idoso(a) {nome} ")
+
+................................................................................................................................................
+
+# ex11 (Exemplo de acesso ao cinema , com retrições de idade , venda e disponibilidade de ingreços)
+print("olá bem vindo ao cinema!")
+print("aquitemos 3 tipos de filme\nfilme1 : anime +12 \nfilme2 : ação +16 \nfilme3 : terror extremo+18")
+
+idade=int(input("digite a sua idade e veja as retrições : "))
+
+if idade <= 12 :
+   print("olá minha criança vc poderá assitir anime , apenas a seção 1 esta liberada aproveite! : ) ")
+
+elif idade <= 16 :
+   print("olá meu jovem vc pode escolher entre a seção 1 e 2 \na seção 3 está restrita por causa da idade , faça bom proveto! : ) ")
+
+elif idade >= 18 :
+   print("eai tudo ok ? fique a vontade para escolher a seção 1 2 ou 3 bom proveito! : ) ")
+
+   print("temos apenas 3 ingressos")
+
+ingressos_disponiveis = int(input("quantos ingressos deseja? :+) "))
+
+if ingressos_disponiveis<=3:
+   print("pronto ele esta pago e disponivel logo na entrada bom filme!")
+
+else:
+   print("infelismente temos apenas 3 ingressos amigo(a) :-( ")
+
+................................................................................................................................................
+
+# ex12 (exemplo de quantidade de letras com len)
+numeros = "abacate"
+
+comprimento = len(numeros)
+
+print(comprimento)
+
+................................................................................................................................................
+
+# ex13 (ex de soma de numeros ultilizando lambda)
+soma = lambda a , b: a + b
+resultado = soma (3,4)
+print(resultado)
+
+................................................................................................................................................
+
+# ex14 (ex da soma de todos os numeros de uma unica vez com sum)
+numeros = [1 , 2 , 3 , 4 , 5]
+
+resultado = sum(numeros)
+
+print(resultado)
+
+................................................................................................................................................
+
+# ex15 (ex da soma, media total de um aluno)
+notas =[7.5 , 8.0 , 6.5 , 9.0 , 7.0]
+
+def calcular_media(notas) :
+    total = sum(notas)
+    media = total/len(notas)
+    return media
+arredondar_media = lambda media: round(media,2)
+
+media = calcular_media(notas)
+media_arredondada = arredondar_media(media)
+
+if media_arredondada >= 7:
+    situacao = print("Aprovado")
+else:
+    situacao = print("reprovado")
+
+print(notas)
+print(media_arredondada)
+print(situacao)
+
+................................................................................................................................................
+
+#ex16 (ex da compra de um produto com valor e desconto somados)
+valor_do_produto = int(input("Digite o valor do produto R$: "))
+desconto = int(input("Digite o valor do desconto%: "))
+
+if desconto < 0 or desconto > 100:
+    print("ERRO: O desconto deve estar entre 0% e 100%")
+else:
+
+    valor_desconto = valor_do_produto * (desconto / 100)
+    total_com_desconto = valor_do_produto - valor_desconto
+
+    print(f"Valor do desconto: R$ {valor_desconto:.2f}")
+    print(f"Total a pagar: R$ {total_com_desconto:.2f}")
+
+................................................................................................................................................
+
+# ex16
