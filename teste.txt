@@ -1,1 +1,10 @@
 print("olá mundo")
+
+# ex2 (um exemplo de como somar 2 numeros usando comando def)
+def soma (a,b) :
+    resultado = a + b
+    return resultado
+
+resultado_soma = soma(5,3)
+
+print(resultado_soma)
