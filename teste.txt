@@ -19,12 +19,14 @@ print(resultado_soma)
 # ex3 (Um pequeno exemplo de escolha entre um numero par ou impar)
 numero = int(input("Digite um numero: "))
 
-while numero != 0:
-    if numero % 2 == 0 :
-        print("O numero é par")
-    else :
-        print("O numero é impar")
-    numero = int(input("Digite outro numero: "))
+numeros = int(input("Digite um numero: "))
+while numeros != 0 :
+    if numeros % 2 == 0 :
+        print(f"f o numero {numeros} é par")
+    else:
+        print(f"o numero {numeros} é impar")
+
+    numeros = int(input("Digite outro numero: "))
 
 ................................................................................................................................................
 
