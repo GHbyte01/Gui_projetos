@@ -16,7 +16,7 @@ print(resultado_soma)
 
 ................................................................................................................................................
 
-# ex3 (Um pequeno exemplo de escolha entre um numero par ou impar)
+# EX3 TESTE (Um pequeno exemplo de escolha entre um numero par ou impar)
 numero = int(input("Digite um numero: "))
 
 numeros = int(input("Digite um numero: "))
