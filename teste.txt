@@ -1,4 +1,12 @@
-IMPPORTANTE ! estou usando pontilhado "..........." para separar os projetos.
+📌 IMPPORTANTE ! estou usando pontilhado "..........." para separar os projetos.
+
+🎯 SÃO PROJETOS SIMPLES E NÃO POSSUEM ENFASE EM DETALHES , POIS , ESTOU NO COMEÇO DA FACULDAE , CURSOS ETC. E AINDA HÁ MUITO PARA MELHORAR , MAS COM DEDICAÇÃO E ESFORÇO QUE NÃO SE LIMITAM SERÁ POSSIVEL.
+
+Aqui nesse projeto , estou ultilizando linguagem python exclusivamente , ultilizo linguagens como "c , javascript" em outras branches
+
+💭 Uma pequena curiosidade é que durante o semestre da faculdade eu foco apenas no material didatico da faculdade durante 4 h no minimo na parte da tarde após finalizar meu trabalho/estágio , e 45m de ingles diario durante a semana , treino linguagem de programação aos 
+ sabados e domingo de manhã para aproveitar o descanço na parte da tarde.
+     Durante as férias da faculdade que duram cerca de 3 messes procuro realizar cursos "complementares" ao que eu aprendi na faculdade , uma plataforma que ultilizo muito para esse fim é a "udemy". Um exemplo curto desses cursos : "Linguagens de programação como "python , c , java script , java , cofee , c# , c++ , S.O WINDOWS LINUX E MAC , html5 css3 , arduino" e muitos outros cursos que complementam a faculdade pois realmente me apeguei a area de eng.software e desejo ser um profissinal de êxito e versátil. Óbviamente não procedi a todos os cursos sitados ainda pois eles demandam tempo , muito menos a todas as linguagem de programação , por enquanto foco no basico "pyton , java , html5 , css3 , ingles juntamente ao conteúdo da faculdade , mas como dito , com esforço e minha paixão pelos estudos desejo ser um profissinal de excelência na área dos softwares.
 
 # ex1 (Um pequeno exemplo do meu primeiro contato com programação) 
 print("hello world")
